@@ -48,7 +48,7 @@ a img {
 /* END RESET*/
 
 a {
-  color: #ff0000;
+  color: #6397b5;
 }
 body {
   font-family: helvetica, arial, sans-serif;
@@ -57,26 +57,61 @@ h1 {
   font-size: 7vw;
   margin-top: 0;
 }
-html {
+/*html {
   box-shadow: 0 0 0 30px #000 inset;
   padding: 0 30px;
+}*/
+p {
+  line-height: 1.5;
 }
 /*Hero Styles*/
 .full-hero {
   background-color: #c7dbfc;
-  height: 50vh;
+  background-size: cover;
+  box-sizing: border-box;
+  height: 100vh;
+  opacity: 0.75;
+  padding-top: 10vh;
+}
+.full-hero:after {
+  bottom: 2vh;
+  color: #fff;
+  content: "﹀";
+  font-size: 36px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
 }
 .full-hero:hover {
   background-color: #00f;
 }
-/*Page styles*/
-.section-wrapper {
-  font-size: 24px;
-  margin: 1% auto;
-  max-width: 960px;
+.hero-home {
+    background-image: url(/images/C&O.jpg);
+    background-position: center center;
+}
+.hero-content {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.hero-content h1 {
+  color: rgba(255,255,255,0.8);
+  font-size: 7vw;
+  margin-bottom: 0.25em;
+}
+/*Homepage styles*/
+
+.home-wrapper {
+  margin: 4rem auto;
+  max-width: 980px;
+  width: 90vw;
+  padding: 2vh 0;
   overflow: hidden;
 }
-.section-wrapper:after {
+.home-wrapper:after {
   visibility: hidden;
   display: block;
   font-size: 0;
@@ -84,20 +119,41 @@ html {
   clear: both;
   height: 0;
 }
+.home-wrapper h3 {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+.about-wrapper {
+  text-align: left;
+}
+.project-wrapper {
+  text-align: center;
+}
+.project-wrapper a {
+  color: #ffcc17;
+}
 .project-box {
   border: 1px solid #000000;
   box-sizing: border-box;
   float: left;
   font-size: 1rem;
-  margin: 2%;
-  padding: 2%;
-  width: 23%;
+  height: 20%;
+  margin: 1.5rem;
+  padding: 3% 2%;
+  width: 28%;
 }
-.section-wrapper h3 {
-  font-size: 1.5em;
+.project-box:active,
+.project-box:hover {
+  background-color: rgba(200,200,200,.5);
 }
-.section-wrapper a {
-  color: #ffcc17;
+.project-box img {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.edu-wrapper {
+  text-align: right;
 }
 
 /*Header styles*/
@@ -112,7 +168,7 @@ html {
 .header-nav {
   float: right;
   list-style: none;
-  padding: 5.5vh 60px 0 0;
+  padding: 3vh 60px 0 0;
   text-align: center;
 }
 .header-nav > li {
@@ -162,19 +218,18 @@ html {
   box-sizing: border-box;
   display: block;
   height: 10vh;
-  left: -30px;
   padding-top: 10px;
   position: relative;
   text-align: center;
   width: 10vh;
 }
 .header-logo img {
-  width: 50px;
+  width: 15vh;
 }
 
 /*Footer styles */
 .footer {
-  background-color:  #000;
+  background-color: #293a65;
   padding: 10vh 0 15vh;
   text-align: center;
 }
