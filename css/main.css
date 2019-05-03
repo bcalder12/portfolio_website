@@ -168,7 +168,7 @@ p {
   background-color: #00f;
 }
 .hero-home {
-    background-image: url(/images/trees.png);
+    background-image: url(images/trees.png);
     background-position: center center;
 }
 .hero-content {
